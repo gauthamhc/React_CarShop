@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 15px 10px;
+  box-shadow: 0 0 5px #ccc;
+}
