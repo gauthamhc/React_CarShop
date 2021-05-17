@@ -4,6 +4,7 @@ import "./Styles/Style.css";
 import Header from "./Components/Header";
 import Section from "./Components/Section";
 import { GlobalProvider } from "./Components/Context";
+import { Link } from "react-router-dom";
 
 const App = () => {
   return (

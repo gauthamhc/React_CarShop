@@ -28,7 +28,7 @@ const Header = () => {
         <nav>
           <ul className={toggle ? "toggle" : ""}>
             <li>
-              <Link to="/product">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/product">Product</Link>

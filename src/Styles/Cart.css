@@ -25,6 +25,7 @@ section .cart {
 
 .buy-now {
   margin: 1rem 0;
+  cursor: pointer;
 }
 .buy-now button {
   padding: 1rem;
