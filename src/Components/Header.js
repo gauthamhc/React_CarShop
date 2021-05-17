@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../Styles/Header.css";
 import Menu from "../svg/bars-solid.svg";
 import Close from "../svg/times-solid.svg";
 import CartIcon from "../svg/shopping-cart-solid.svg";
 import { Link } from "react-router-dom";
+import { GlobalContext } from "../Components/Context";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -11,6 +12,8 @@ const Header = () => {
   const toggleHandler = () => {
     setToggle(!toggle);
   };
+
+  const { cart } = useContext(GlobalContext);
   return (
     <div>
       <header>
@@ -19,13 +22,13 @@ const Header = () => {
         </div>
         <div className="name">
           <h1>
-            <Link to="/">Hyundai</Link>
+            <Link to="/product">Hyundai</Link>
           </h1>
         </div>
         <nav>
           <ul className={toggle ? "toggle" : ""}>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/product">Home</Link>
             </li>
             <li>
               <Link to="/product">Product</Link>
@@ -45,7 +48,7 @@ const Header = () => {
           </ul>
 
           <div className="cart">
-            <span>0</span>
+            <span>{cart.length}</span>
             <Link to="/cart">
               <img src={CartIcon} alt="" width="20" />
             </Link>
