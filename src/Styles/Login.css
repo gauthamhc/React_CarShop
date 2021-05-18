@@ -1,0 +1,68 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.social-links {
+  margin: 1rem 0;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 2rem 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+h5 {
+  margin: 0 1rem;
+}
+.btn-social {
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  /* max-width: 20px; */
+  width: 100%;
+}
+
+.facebook {
+  background-color: #0d8bf1;
+  color: #fff;
+}
+.google {
+  background-color: #ef766c;
+  color: #fff;
+}
+.phone-otp {
+  margin: 1.2rem;
+}
+
+.otp {
+  padding: 1rem 0;
+}
+
+input {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.8rem;
+  max-width: 200px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.submit:hover {
+  background-color: #ef766c;
+  color: #fff;
+  font-size: 100%;
+}

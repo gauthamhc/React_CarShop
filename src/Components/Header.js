@@ -5,8 +5,18 @@ import Close from "../svg/times-solid.svg";
 import CartIcon from "../svg/shopping-cart-solid.svg";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../Components/Context";
+// import FacebookLogin from "react-facebook-login";
 
 const Header = () => {
+  // const responseFacebook = (response) => {
+  //   console.log("login", response);
+  // };
+  // <FacebookLogin
+  //   appId="142327931247257"
+  //   fields="name,email,picture"
+  //   callback={responseFacebook}
+  // />;
+
   const [toggle, setToggle] = useState(false);
 
   const toggleHandler = () => {
