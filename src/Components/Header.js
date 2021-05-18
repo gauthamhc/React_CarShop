@@ -8,15 +8,6 @@ import { GlobalContext } from "../Components/Context";
 // import FacebookLogin from "react-facebook-login";
 
 const Header = () => {
-  // const responseFacebook = (response) => {
-  //   console.log("login", response);
-  // };
-  // <FacebookLogin
-  //   appId="142327931247257"
-  //   fields="name,email,picture"
-  //   callback={responseFacebook}
-  // />;
-
   const [toggle, setToggle] = useState(false);
 
   const toggleHandler = () => {
@@ -32,25 +23,25 @@ const Header = () => {
         </div>
         <div className="name">
           <h1>
-            <Link to="/product">Hyundai</Link>
+            <Link to="/">Hyundai</Link>
           </h1>
         </div>
         <nav>
           <ul className={toggle ? "toggle" : ""}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={toggleHandler}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/product">Product</Link>
+              <Link to="/product" onClick={toggleHandler}>
+                Product
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/login">Login / Register</Link>
+              <Link to="/login" onClick={toggleHandler}>
+                Login / Register
+              </Link>
             </li>
             <li className="close-btn" onClick={toggleHandler}>
               <img src={Close} width="20" />

@@ -16,29 +16,32 @@ const Login = () => {
       <h2>Login</h2>
       <div className="social-links">
         <div className=" socials">
-          <FacebookLogin
-            appId="142327931247257"
-            fields="name,email,picture"
-            callback={responseFacebook}
-            className="btn-social facebook"
-          />
+          <div className="socials-btn">
+            <FacebookLogin
+              appId="142327931247257"
+              fields="name,email,picture"
+              callback={responseFacebook}
+              className="btn-social facebook"
+            />
+          </div>
           <h5>or</h5>
-          <GoogleLogin
-            clientId="705848085662-ellccrfh2al70hjnapj4av7fq7831cpe.apps.googleusercontent.com"
-            buttonText="LOGIN WITH GOOGLE"
-            onSuccess={responseGoogle}
-            onFailure={responseGoogle}
-            className="btn-social"
-          />
+          <div className="socials-btn">
+            <GoogleLogin
+              clientId="705848085662-ellccrfh2al70hjnapj4av7fq7831cpe.apps.googleusercontent.com"
+              buttonText="LOGIN WITH GOOGLE"
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+              className="btn-social"
+            />
+          </div>
         </div>
-        <div className="phone-otp">
+        {/* <div className="phone-otp">
           <div className="otp">
             <h6>Login through OTP</h6>
             <input type="text" />
           </div>
-
           <button className="btn-social submit">Submit</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
