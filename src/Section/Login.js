@@ -18,7 +18,7 @@ const Login = () => {
         <div className=" socials">
           <div className="socials-btn">
             <FacebookLogin
-              appId="142327931247257"
+              appId="" //removed for privacy policy
               fields="name,email,picture"
               callback={responseFacebook}
               className="btn-social facebook"
@@ -35,13 +35,6 @@ const Login = () => {
             />
           </div>
         </div>
-        {/* <div className="phone-otp">
-          <div className="otp">
-            <h6>Login through OTP</h6>
-            <input type="text" />
-          </div>
-          <button className="btn-social submit">Submit</button>
-        </div> */}
       </div>
     </div>
   );

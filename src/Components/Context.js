@@ -6,73 +6,66 @@ export const GlobalProvider = ({ children }) => {
   const [products, setProducts] = useState([
     {
       _id: "1",
-      title: "Nike Shoes 01",
+      title: "Hyundai Santro",
       src: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/1600x590_santro.png",
-      description: "UI/UX designing, html css tutorials",
-      content:
-        "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
-      price: 23,
-      colors: ["red", "black", "crimson", "teal"],
+      description: "5 MT, Smart Auto AT",
+      content: "",
+      price: 5555,
+
       count: 1,
     },
     {
       _id: "2",
-      title: "Nike Shoes 02",
+      title: "Hyundai Nios ",
       src: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/1600x590_nios.png",
-      description: "UI/UX designing, html css tutorials",
-      content:
-        "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
-      price: 19,
-      colors: ["red", "crimson", "teal"],
+      description: "5 MT, Smart Auto AT",
+      content: "",
+      price: 6666,
+
       count: 1,
     },
     {
       _id: "3",
-      title: "Nike Shoes 03",
+      title: "Hyundai i20",
       src: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/1600x590_i20.png",
-      description: "UI/UX designing, html css tutorials",
-      content:
-        "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
-      price: 50,
-      colors: ["lightblue", "white", "crimson", "teal"],
+      description: "5 MT, 6 MT, 7 DCT, IVT, IMT",
+      content: "",
+      price: 7777,
+
       count: 1,
     },
     {
       _id: "4",
-      title: "Nike Shoes 04",
+      title: "Hyundai Elantra",
       src: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/1600x590_verna.png",
-      description: "UI/UX designing, html css tutorials",
-      content:
-        "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
-      price: 15,
-      colors: ["orange", "black", "crimson", "teal"],
+      description: "6 MT, 6 AT",
+      content: ".",
+      price: 20000,
+
       count: 1,
     },
     {
       _id: "5",
-      title: "Nike Shoes 05",
+      title: "Hyundai Creta",
       src: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/1600x590_creta.png",
-      description: "UI/UX designing, html css tutorials",
-      content:
-        "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
-      price: 10,
-      colors: ["orange", "black", "crimson", "teal"],
+      description: "5 MT, 6 AT, 7 DCT, IVT",
+      content: ".",
+      price: 140000,
+
       count: 1,
     },
     {
       _id: "6",
-      title: "Nike Shoes 06",
+      title: "KONA Electric",
       src: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/1600x590_kona.png",
-      description: "UI/UX designing, html css tutorials",
-      content:
-        "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
-      price: 17,
-      colors: ["orange", "black", "crimson", "teal"],
+      description: "AT",
+      content: ".",
+      price: 32500,
+
       count: 1,
     },
   ]);
   const [cart, setCart] = useState([]);
-  const [total, setTotal] = useState(0);
 
   const addCart = (id) => {
     const check = cart.every((item) => {
@@ -121,7 +114,6 @@ export const GlobalProvider = ({ children }) => {
         products,
         cart,
         addCart,
-        total,
         reduction,
         increase,
         removeProduct,

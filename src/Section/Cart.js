@@ -3,8 +3,7 @@ import { GlobalContext } from "../Components/Context";
 import "../Styles/Cart.css";
 
 const Cart = () => {
-  const { cart, addCart, total, reduction, increase, removeProduct } =
-    useContext(GlobalContext);
+  const { cart, reduction, increase } = useContext(GlobalContext);
 
   return (
     <>
@@ -15,7 +14,7 @@ const Cart = () => {
             <div className="box">
               <div className="row">
                 <h2>{item.title}</h2>
-                <span>${item.price}</span>
+                <h4>${item.price}</h4>
               </div>
 
               <p>{item.description}</p>
