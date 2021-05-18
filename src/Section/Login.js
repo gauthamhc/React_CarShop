@@ -18,7 +18,7 @@ const Login = () => {
         <div className=" socials">
           <div className="socials-btn">
             <FacebookLogin
-              appId="" //removed for privacy policy
+              appId="142327931247257" //removed for privacy policy
               fields="name,email,picture"
               callback={responseFacebook}
               className="btn-social facebook"
